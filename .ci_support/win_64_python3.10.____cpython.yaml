@@ -1,5 +1,5 @@
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - conda-forge
 channel_targets:
@@ -7,7 +7,7 @@ channel_targets:
 gsl:
 - '2.7'
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
   python:
     min_pin: x.x
