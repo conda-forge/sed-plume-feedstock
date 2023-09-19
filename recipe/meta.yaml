@@ -1,5 +1,5 @@
 {% set name = "sed-plume" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/mcflugen/plume/archive/v{{ version }}.tar.gz
-  sha256: ec764a27d67737353336396d6d460a08f391ae2745a17aa088421e6f28164c30
+  sha256: 612f826390eda0379a74b26d1abbc8c4dbf7bff8f06bbae92d6e46098bc131f2
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
-  skip: True  # [py<38]
+  number: 0
+  skip: true  # [py<38]
   entry_points:
     - plume = plume.cli:plume
 
